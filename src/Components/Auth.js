@@ -1,12 +1,6 @@
 import React, {useState} from 'react'
 import {Button, Form, Modal} from "react-bootstrap";
 
-// const styles = {
-//   blur: {
-//     filter: 'blur(10px)',
-//   }
-// }
-
 function Auth() {
 
   const [auth, setAuth] = useState(true)
@@ -17,7 +11,7 @@ function Auth() {
   }
 
   return (
-    // Сделать проверку авторизован ли пользователь
+    //TODO Проверка авторизован ли пользователь
     <Modal show={auth} centered>
       <Modal.Header>
         <Modal.Title>Log in</Modal.Title>

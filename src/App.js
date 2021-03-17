@@ -1,11 +1,12 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navigation from './Components/Navigation'
-import {Test} from './pages/Test'
-import {Messages} from './pages/Messages'
-import {Vacancies} from './pages/Vacancies'
-import {Summary} from './pages/Summary'
-import {Profile} from './pages/Profile'
+import {Test} from './pages/test'
+import {Messages} from './pages/messages'
+import {Vacancies} from './pages/vacancies'
+import {Summary} from './pages/summary'
+import {Company} from './pages/company'
+import {Profile} from './pages/profile'
 
 import {
   BrowserRouter as Router,
@@ -26,6 +27,7 @@ function App() {
             <Route path='/messages' component={Messages} />
             <Route path='/vacancies' component={Vacancies}/>
             <Route path='/summary' component={Summary}/>
+            <Route path='/company' component={Company}/>
             <Route path='/profile' component={Profile}/>
           </Switch>
         </Router>

@@ -2,7 +2,7 @@ import React from 'react'
 import {Col, Container, Row, Badge} from 'react-bootstrap'
 
 const styles = {
-  vacancyWrapper: { // дублирование
+  vacancyWrapper: {
     backgroundColor: '#EBEBEB',
     padding: '1.5rem',
     height: '18rem',
@@ -73,7 +73,7 @@ function Vacancy(props) {
           <p style={styles.salary}>{props.salary}</p>
           <p style={styles.description}>{props.description}</p>
           <Badge pill variant="secondary">
-            {/*// цикл*/}
+            {/*//TODO цикл*/}
             {props.tags}
           </Badge>{' '}
           <p style={styles.company}>{props.company}</p>
@@ -81,7 +81,7 @@ function Vacancy(props) {
 
         <Col md='4'>
           <p style={styles.conditionsTitle}>Условия</p>
-          {/*Цикл*/}
+          {/*TODO Цикл*/}
           <p style={styles.conditions}>{props.conditions}</p>
         </Col>
       </Row>
