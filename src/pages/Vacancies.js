@@ -7,7 +7,7 @@ const styles = {
   badgeColor: {
     backgroundColor: '#DADADA'
   },
-  filterWrapper: { // дублирование
+  filterWrapper: {
     backgroundColor: '#EBEBEB',
     padding: '1.5rem',
     height: '40rem'

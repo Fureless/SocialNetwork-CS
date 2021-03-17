@@ -26,37 +26,36 @@ const styles = {
 }
 
 function Navigation() {
-// Пофиксить ошибку при нажатии
+//TODO Пофиксить ошибку при нажатии
   const [showVac, setShowVac] = useState(false)
   const handleVacClose = () => setShowVac(false)
   const handleVacShow = () => setShowVac(true)
 
   return (
     <>
-      {/*// Сделать подсвечивание активной ссылки*/}
+      {/*TODO  Сделать подсвечивание активной ссылки*/}
       <Navbar expand='md' variant='dark' sticky='top' style={styles.header}>
         <Navbar.Brand href='/' style={styles.headerLogo}>Network</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'>
-            {/*Fix <a> -> <a>*/}
+            {/*TODO Fix <a> -> <a>*/}
             <Nav.Link><Link to='/messages' style={styles.navLink}>Сообщения</Link></Nav.Link>
             <Nav.Link><Link to='/summary' style={styles.navLink}>Резюме</Link></Nav.Link>
             <Nav.Link><Link to='/vacancies' style={styles.navLink}>
               <div className="dropdown">
                 <span className="dropNav">Вакансии</span>
                 <div className="dropdown-content">
-                  {/*<span onClick={handleCreateVacancy}>Create new</span>*/}
                   <a onClick={handleVacShow} href="#">Create new</a>
                 </div>
               </div>
             </Link></Nav.Link>
-            {/*<Nav.Link><Link to='/profile' style={styles.navLink}><Image src="../assets/images/ava.png" roundedCircle /></Link></Nav.Link>*/}
+            <Nav.Link><Link to='/company' style={styles.navLink}>Компания</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
 
-      {/*Сделать проверку введенных полей*/}
+      {/*TODO Сделать проверку введенных полей*/}
       <Modal show={showVac} onHide={handleVacClose} backdrop='static'>
         <Modal.Header closeButton>
           <Modal.Title>Vacancy creating...</Modal.Title>
@@ -87,9 +86,9 @@ function Navigation() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          {/*Кнопка недоступна пока все поля не введены корректно*/}
+          {/*TODO Кнопка недоступна пока все поля не введены корректно*/}
           <Button variant='dark'>Send</Button>
-          {/*Пользователь отправляет введенные данные в Vacancy.js и там рендерится новая вакансия*/}
+          {/*TODO Пользователь отправляет введенные данные в Vacancy.js и там рендерится новая вакансия*/}
         </Modal.Footer>
       </Modal>
     </>

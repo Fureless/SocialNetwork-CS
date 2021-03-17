@@ -24,7 +24,6 @@ const styles = {
 
 function AsideFilters() {
   return (
-    // Попытаться сделать адаптивным
     <Container style={styles.wrapper}>
       <p style={styles.filterSettingsTitle}>Настройка фильтров</p>
       <span style={styles.filterArea}>
