@@ -24,7 +24,7 @@ const styles = {
   }
 }
 
-export function Summary() {
+export function summary() {
   return (
     <>
       <Container fluid className='mr-auto'>

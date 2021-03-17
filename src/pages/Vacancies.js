@@ -20,7 +20,7 @@ const styles = {
   }
 }
 
-export function Vacancies() {
+export function vacancies() {
   return (
   <>
     <Container fluid className='mr-auto'>

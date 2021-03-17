@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Company() {
+export function company() {
   return (
     <h1>Company Page</h1>
   )

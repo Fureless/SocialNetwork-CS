@@ -1,12 +1,13 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Auth from './Components/Auth'
 import Navigation from './Components/Navigation'
-import {Test} from './pages/test'
-import {Messages} from './pages/messages'
-import {Vacancies} from './pages/vacancies'
-import {Summary} from './pages/summary'
-import {Company} from './pages/company'
-import {Profile} from './pages/profile'
+import {test} from './pages/test'
+import {messages} from './pages/messages'
+import {vacancies} from './pages/vacancies'
+import {summary} from './pages/summary'
+import {company} from './pages/company'
+import {profile} from './pages/profile'
 
 import {
   BrowserRouter as Router,
@@ -23,12 +24,12 @@ function App() {
           {/*<Auth/>*/}
           <Navigation/>
           <Switch>
-            <Route exact path='/' component={Test} />
-            <Route path='/messages' component={Messages} />
-            <Route path='/vacancies' component={Vacancies}/>
-            <Route path='/summary' component={Summary}/>
-            <Route path='/company' component={Company}/>
-            <Route path='/profile' component={Profile}/>
+            <Route exact path='/' component={test} />
+            <Route path='/messages' component={messages} />
+            <Route path='/vacancies' component={vacancies}/>
+            <Route path='/summary' component={summary}/>
+            <Route path='/company' component={company}/>
+            <Route path='/profile' component={profile}/>
           </Switch>
         </Router>
         </div>

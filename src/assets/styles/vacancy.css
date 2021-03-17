@@ -1,0 +1,74 @@
+.vacancy-wrapper {
+  background-color: #EBEBEB;
+  padding: 1.5rem;
+  height: 18rem;
+  margin-bottom: 1rem;
+}
+
+.line {
+  border-right: 1px solid gray;
+}
+
+.title {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  padding-bottom: .5rem;
+}
+
+.salary {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.description {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  width: 95%;
+  overflow: scroll;
+  height: 7rem;
+  margin-top: .6rem;
+  margin-bottom: .6rem;
+  color: #73726A;
+}
+
+.tags-list {
+  padding-inline-start: 0;
+}
+
+.tags {
+  background-color: #DADADA;
+  color: #73726A
+}
+
+.company {
+
+}
+
+.conditions-title {
+  padding-left: .4rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.conditions-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.conditions {
+  padding-left: 1rem;
+  margin-bottom: .6rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  line-height: 1.2rem;
+}
