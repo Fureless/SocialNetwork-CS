@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Messages() {
+export function messages() {
   return (
     <h1>Messages page</h1>
   )

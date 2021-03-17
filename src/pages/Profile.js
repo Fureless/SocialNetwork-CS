@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Profile() {
+export function profile() {
   return (
     <h1>Profile page</h1>
   )
