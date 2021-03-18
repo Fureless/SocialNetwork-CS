@@ -28,7 +28,7 @@ function Summary(props) {
 
   return (
     <Container className='summary-wrapper'>
-      <Row className='justify-content-between'>
+      <Row className='justify-content-between flex-nowrap'>
         <Col md='8' className='line'>
           <p className='title'>{props.title}</p>
           {/*TODO*/}
