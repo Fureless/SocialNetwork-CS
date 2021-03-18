@@ -29,7 +29,7 @@ function Summary(props) {
   return (
     <Container className='summary-wrapper'>
       <Row className='justify-content-between flex-nowrap'>
-        <Col md='8' className='line'>
+        <Col md='8' className='vertical-line w-75'>
           <p className='title'>{props.title}</p>
           {/*TODO*/}
           <p className='salary'>{props.name}</p>
@@ -37,7 +37,7 @@ function Summary(props) {
           <ul className='tags-list'>{renderTags}</ul>
         </Col>
 
-        <Col md='4'>
+        <Col md='4' className='w-25'>
           <p className='conditions-title'>О себе</p>
           {/*<ul className='conditions-list'>{renderConditions}</ul>*/}
           <p><strong>Стаж работы: </strong>3 года</p>
