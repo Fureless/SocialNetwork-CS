@@ -18,10 +18,12 @@ function Vacancy(props) {
   return (
     <Container className='vacancy-wrapper'>
       <Row className='justify-content-between flex-nowrap'>
-        <Col md='8' className='line'>
+        <Col md='8' className='vertical-line w-75'>
           <p className='title'>{props.title}</p>
           <p className='salary'>{props.salary}</p>
-          <p className='description-vacancy'>{props.description}</p>
+          <div className='overflow-hidden'>
+            <p className='description-vacancy'>{props.description}</p>
+          </div>
           <ul className='tags-list'>{renderTags}</ul>
           <span className='company'>
             <Figure.Image
@@ -35,10 +37,9 @@ function Vacancy(props) {
             <strong>{props.company}</strong>
           </span>
         </Col>
-
-        <Col md='4'>
+        <Col md='4' className='w-25'>
           <p className='conditions-title'>Условия</p>
-          <ul className='conditions-list'>{renderConditions}</ul>
+          <ul>{renderConditions}</ul>
         </Col>
       </Row>
     </Container>

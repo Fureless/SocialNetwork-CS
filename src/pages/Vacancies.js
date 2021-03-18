@@ -48,7 +48,7 @@ export function vacancies() {
                    tags='Android Polytech Application'
                    image='http://placekitten.com/75/75'
                    company='Санкт-Петербургский политехнический универститет'
-                   conditions='ЕГЭ от 270 баллов/Без опыта работы/'
+                   conditions='ЕГЭ от 270 баллов/Без опыта работы'
           />
         </Col>
 
