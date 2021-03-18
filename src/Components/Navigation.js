@@ -41,7 +41,7 @@ function Navigation() {
           <Nav className='mr-auto'>
             {/*TODO Fix <a> -> <a>*/}
             <Nav.Link><Link to='/messages' style={styles.navLink}>Сообщения</Link></Nav.Link>
-            <Nav.Link><Link to='/summary' style={styles.navLink}>Резюме</Link></Nav.Link>
+            <Nav.Link><Link to='/summaries' style={styles.navLink}>Резюме</Link></Nav.Link>
             <Nav.Link><Link to='/vacancies' style={styles.navLink}>
               <div className="dropdown">
                 <span className="dropNav">Вакансии</span>

@@ -5,7 +5,7 @@ import Navigation from './Components/Navigation'
 import {test} from './pages/test'
 import {messages} from './pages/messages'
 import {vacancies} from './pages/vacancies'
-import {summary} from './pages/summary'
+import {summaries} from './pages/summaries'
 import {company} from './pages/company'
 import {profile} from './pages/profile'
 
@@ -27,7 +27,7 @@ function App() {
             <Route exact path='/' component={test} />
             <Route path='/messages' component={messages} />
             <Route path='/vacancies' component={vacancies}/>
-            <Route path='/summary' component={summary}/>
+            <Route path='/summaries' component={summaries}/>
             <Route path='/company' component={company}/>
             <Route path='/profile' component={profile}/>
           </Switch>
