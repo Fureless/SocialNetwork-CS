@@ -27,7 +27,7 @@ function AsideFilters() {
     <Container style={styles.wrapper}>
       <p style={styles.filterSettingsTitle}>Настройка фильтров</p>
       <span style={styles.filterArea}>
-        <div style={styles.filterAreaName}>Администратирование</div>
+        <div style={styles.filterAreaName}>Администрирование</div>
         <div style={styles.filterAreaName}>Аналитика</div>
         <div style={styles.filterAreaName}>Бэкенд</div>
         <div style={styles.filterAreaName}>Дизайн</div>

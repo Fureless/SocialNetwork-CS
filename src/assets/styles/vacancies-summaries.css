@@ -53,7 +53,7 @@
   line-height: 1.7rem;
   width: 95%;
   overflow: scroll;
-  height: 7rem;
+  height: 6rem;
   margin-top: .6rem;
   margin-bottom: .6rem;
   color: #73726A;
@@ -75,6 +75,7 @@
 
 .tags-list {
   padding-inline-start: 0;
+  margin-bottom: .6rem;
 }
 
 .tags {
@@ -83,7 +84,11 @@
 }
 
 .company {
-
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 .conditions-title {
