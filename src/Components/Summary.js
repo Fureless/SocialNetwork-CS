@@ -1,48 +1,39 @@
 import React from 'react'
-import {Col, Container, Row, Badge} from 'react-bootstrap'
+import {Col, Container, Row, Badge, Figure} from 'react-bootstrap'
 import summaryStyles from '../assets/styles/vacancies-summaries.css'
 
 function Summary(props) {
-  const tags = [
-    { id: 1, tag: 'IOS' },
-    { id: 2, tag: 'C++' },
-    { id: 3, tag: 'CI/CD' },
-    { id: 4, tag: 'Backend' },
-    { id: 5, tag: 'JS' }
-  ];
-
-  // const conditions = [
-  //   { id: 1, condition: 'Опыт работы более 3-х лет' },
-  //   { id: 2, condition: 'Работа в офисе' },
-  //   { id: 3, condition: 'Типа того' },
-  //   { id: 4, condition: 'Квадратики по бокам что-ли' }
-  // ];
-
-  const renderTags = tags.map(item => (
+  const renderTags = (props.tags.split(' ').map((item, index) => {
+    return {id: index, tag: item}
+  })).map(item => (
     <li key={item.id} className='mr-2 d-inline'><Badge pill className='tags'>{item.tag}</Badge></li>
   ))
-
-  // const renderConditions = conditions.map(item => (
-  //   <li key={item.id} className='conditions'>{item.condition}</li>
-  // ))
 
   return (
     <Container className='summary-wrapper'>
       <Row className='justify-content-between flex-nowrap'>
         <Col md='8' className='vertical-line w-75'>
-          <p className='title'>{props.title}</p>
-          {/*TODO*/}
-          <p className='salary'>{props.name}</p>
+          <span className='summary-img'>
+            <Figure.Image
+              width={64}
+              height={64}
+              alt='64x64'
+              src={props.image}
+              roundedCircle
+              className='mr-2 mb-0'
+            />
+            <span className='title mt-1'>{props.title}<p className='name'>{props.name}</p></span>
+          </span>
           <p className='description-summary'>{props.description}</p>
           <ul className='tags-list'>{renderTags}</ul>
         </Col>
-
         <Col md='4' className='w-25'>
           <p className='conditions-title'>О себе</p>
-          {/*<ul className='conditions-list'>{renderConditions}</ul>*/}
-          <p><strong>Стаж работы: </strong>3 года</p>
-          <p><strong>Зарплата: </strong>От 30 000 руб</p>
-          <p><strong>Уровень: </strong>Middle</p>
+          <ul className='about-list'>
+            <li className='about'><span className='about-p'>Стаж работы: </span>{props.exp}</li>
+            <li className='about'><span className='about-p'>Зарплата: </span>{props.salary}</li>
+            <li className='about'><span className='about-p'>Уровень: </span>{props.level}</li>
+          </ul>
         </Col>
       </Row>
     </Container>
