@@ -38,7 +38,7 @@ function Vacancy(props) {
           </span>
         </Col>
         <Col md='4' className='w-25'>
-          <p className='conditions-title'>Условия</p>
+          <p className='conditions-title mb-5'>Условия</p>
           <ul>{renderConditions}</ul>
         </Col>
       </Row>

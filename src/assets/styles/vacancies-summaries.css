@@ -27,6 +27,8 @@
 
 .vertical-line {
   border-right: 2px solid;
+  border-left: 0;
+  border-bottom: 0;
   border-image: linear-gradient(180deg, #EBEBEB 0%, #CFCFCF 26.56%, #CFCFCF 48.96%, #CFCFCF 72.4%, #EBEBEB 100%) 1;
 }
 
@@ -66,10 +68,10 @@
   font-size: 1rem;
   line-height: 1.7rem;
   width: 95%;
-  overflow: hidden;
   height: 5rem;
+  overflow: hidden;
   margin-top: .6rem;
-  margin-bottom: .6rem;
+  margin-bottom: .4rem;
   color: #73726A;
 }
 
@@ -95,19 +97,52 @@
   text-overflow: ellipsis;
 }
 
+.summary-img {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  height: 4rem;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .conditions-title {
   padding-left: .8rem;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.1rem;
   line-height: 1.4rem;
-  margin-bottom: 2.5rem;
 }
 
+/*дублирование*/
 .conditions {
   padding-left: 1rem;
   margin-bottom: .6rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
+  font-size: .9rem;
+  line-height: 1.2rem;
+}
+
+/*дублирование*/
+.about {
+  padding-left: 1rem;
+  margin-bottom: .6rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  line-height: 1.2rem;
+}
+
+/*дублирование*/
+.about-p {
+  margin-bottom: .6rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
   font-size: .9rem;
   line-height: 1.2rem;
 }
@@ -126,4 +161,19 @@ ul {
   margin-right: 0.5rem;
   background: #FBE200;
   box-shadow: inset 0 0 0 2px black;
+}
+
+.name {
+  margin: 0;
+  padding-top: .1rem;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  color: #73726A;
+}
+
+.about-list {
+  margin-top: 2.7rem;
 }

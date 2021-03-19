@@ -1,5 +1,5 @@
 import React from 'react'
-import {Badge, Button, Container, Form, FormControl} from 'react-bootstrap'
+import {Badge, Container, Form, FormControl} from 'react-bootstrap'
 
 const styles = {
   wrapper: {
