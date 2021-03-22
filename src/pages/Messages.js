@@ -1,7 +1,10 @@
 import React from 'react'
+import {Container} from 'react-bootstrap';
 
 export function messages() {
   return (
-    <h1>Messages page</h1>
+    <Container>
+      <h1>Messages page</h1>
+    </Container>
   )
 }

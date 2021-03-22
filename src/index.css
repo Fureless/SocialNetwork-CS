@@ -13,14 +13,19 @@ code {
 }
 
 .wrapper {
-  text-align: center;
-  padding-top: 5rem;
-  width: 320px;
-  margin: 0 auto;
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
 
-body.modal-open .supreme-container{
+body.modal-open .blur-container{
   -webkit-filter: blur(3px);
   -ms-filter: blur(3px);
   filter: blur(3px);
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
 }

@@ -2,35 +2,32 @@ import React, {useState} from 'react'
 import {Button, Form, Modal} from "react-bootstrap";
 
 function Auth() {
-
   const [auth, setAuth] = useState(true)
   const handleClose = () => setAuth(false)
 
-  function sendAuth() {
-    handleClose()
-  }
-
   return (
-    //TODO Проверка авторизован ли пользователь
+    // TODO Проверка авторизован ли пользователь
     <Modal show={auth} centered>
       <Modal.Header>
-        <Modal.Title>Log in</Modal.Title>
+        <Modal.Title>Регистрация</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>
           <Form.Group controlId='fromBasicEmail'>
-            <Form.Label>Email Address</Form.Label>
-            <Form.Control type='email' placeholder='Enter email' />
-            <Form.Text className='text-muted'>We'll never share your email with anyone else.</Form.Text>
+            <Form.Label>Почта</Form.Label>
+            <Form.Control type='email' placeholder='Введите почту' />
+            <Form.Text className='text-muted'>Никто другой ее не узнает</Form.Text>
           </Form.Group>
           <Form.Group controlId='fromBasicPassword'>
-            <Form.Label>Password</Form.Label>
-            <Form.Control type='password' placeholder='Enter password' />
+            <Form.Label>Пароль</Form.Label>
+            <Form.Control type='password' placeholder='Введите пароль' />
+            <Form.Label className='mt-2'>Повтор пароля</Form.Label>
+            <Form.Control type='password' placeholder='Введите пароль ещё раз' />
           </Form.Group>
           <Form.Group controlId='fromBasicCheckbox'>
-            <Form.Check type='checkbox' label='remember me' />
+            <Form.Check type='checkbox' label='Принять политику конфиденциальности' />
           </Form.Group>
-          <Button variant='dark' onClick={sendAuth}>Send</Button>
+          <Button variant='dark' onClick={handleClose}>Send</Button>
         </Form>
       </Modal.Body>
     </Modal>

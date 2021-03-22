@@ -1,7 +1,10 @@
 import React from 'react'
+import {Container} from 'react-bootstrap';
 
 export function company() {
   return (
-    <h1>Company Page</h1>
+    <Container>
+      <h1>Company Page</h1>
+    </Container>
   )
 }

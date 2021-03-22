@@ -1,21 +1,21 @@
-.row-container {
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  width: 90rem;
+* {
+  box-sizing: border-box
 }
 
 .filter-wrapper {
   background-color: #EBEBEB;
   padding: 1.5rem;
-  height: 40rem;
+  height: 49rem;
+
+  position: sticky;
+  top: 7rem;
 }
 
 .vacancy-wrapper {
+  margin-bottom: 1rem;
   background-color: #EBEBEB;
   padding: 1.5rem;
   height: 18rem;
-  margin-bottom: 1rem;
 }
 
 .summary-wrapper {
@@ -26,7 +26,8 @@
 }
 
 .vertical-line {
-  border-right: 2px solid;
+  margin-right: 1rem;
+  border-right: .15rem solid;
   border-left: 0;
   border-bottom: 0;
   border-image: linear-gradient(180deg, #EBEBEB 0%, #CFCFCF 26.56%, #CFCFCF 48.96%, #CFCFCF 72.4%, #EBEBEB 100%) 1;
@@ -85,16 +86,33 @@
   color: #73726A
 }
 
+/*дублирование*/
+.vacancy-img-border {
+  border: .1rem solid #FFFFFF;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+}
+
+/*дублирование*/
+.summary-img-border {
+  border: .1rem solid #FFFFFF;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
 .company {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.2rem;
 
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .summary-img {
@@ -155,12 +173,12 @@ ul {
 .conditions::before {
   content: '';
   display: inline-block;
-  height: 8px;
-  width: 8px;
+  height: .5rem;
+  width: .5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
   background: #FBE200;
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 .12rem black;
 }
 
 .name {
@@ -174,6 +192,60 @@ ul {
   color: #73726A;
 }
 
-.about-list {
-  margin-top: 2.7rem;
+.vacancies-wrapper {
+  width: 70%;
+}
+
+.vacancies-filter-wrapper {
+  width: 25%;
+}
+
+.vacancies-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .vacancies-filter-wrapper {
+    display: none;
+  }
+  .vacancy-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #EBEBEB;
+    padding: 1rem;
+    height: 18rem;
+  }
+  .vacancies-container {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+  .vacancies-wrapper {
+    width: 100%;
+  }
+  .vertical-line {
+    margin-right: 0;
+  }
+  .description-vacancy {
+    line-height: 1.7rem;
+    width: 99%;
+    color: #73726A;
+  }
+  .conditions {
+    padding-left: .8rem;
+    margin-bottom: .2rem;
+    line-height: 1.2rem;
+  }
+  .conditions-title {
+    padding-left: .7rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+  }
 }
