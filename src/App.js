@@ -19,17 +19,19 @@ import {
 function App() {
   return (
     <>
-      <div className='supreme-container'>
+      <div className='blur-container'>
         <Router>
           {/*<Auth/>*/}
           <Navigation/>
           <Switch>
-            <Route exact path='/' component={test} />
-            <Route path='/messages' component={messages} />
-            <Route path='/vacancies' component={vacancies}/>
-            <Route path='/summaries' component={summaries}/>
-            <Route path='/company' component={company}/>
-            <Route path='/profile' component={profile}/>
+            <div className='wrapper'>
+              <Route exact path='/' component={test} />
+              <Route path='/messages' component={messages} />
+              <Route path='/vacancies' component={vacancies}/>
+              <Route path='/summaries' component={summaries}/>
+              <Route path='/company' component={company}/>
+              <Route path='/profile' component={profile}/>
+            </div>
           </Switch>
         </Router>
         </div>

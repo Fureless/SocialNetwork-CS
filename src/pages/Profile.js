@@ -1,7 +1,10 @@
 import React from 'react'
+import {Container} from 'react-bootstrap';
 
 export function profile() {
   return (
-    <h1>Profile page</h1>
+    <Container>
+      <h1>Profile page</h1>
+    </Container>
   )
 }
