@@ -18,9 +18,9 @@ code {
 }
 
 body.modal-open .blur-container{
-  -webkit-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 @media (max-width: 1000px) {

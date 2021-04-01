@@ -1,10 +1,15 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
+import {Container} from 'react-bootstrap'
+import LogIn from '../Components/Auth/LogIn'
 
 export function messages() {
   return (
-    <Container>
-      <h1>Messages page</h1>
-    </Container>
+    <>
+      <LogIn/>
+
+      <Container>
+        <h1>Messages page</h1>
+      </Container>
+    </>
   )
 }

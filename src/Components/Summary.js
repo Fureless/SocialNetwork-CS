@@ -21,17 +21,17 @@ function Summary(props) {
             />
             <span className='title mt-1'>{props.title}<p className='name'>{props.name}</p></span>
           </span>
-          <p className='description-summary'>{props.description}</p>
-          <ul className='tags-list'>{renderTags}</ul>
+        <p className='description-summary'>{props.description}</p>
+        <ul className='tags-list'>{renderTags}</ul>
 
       </div>
       <div className='w-25'>
-          <p className='conditions-title'>О себе</p>
-          <ul className='about-list'>
-            <li className='about'><span className='about-p'>Стаж работы: </span>{props.exp}</li>
-            <li className='about'><span className='about-p'>Зарплата: </span>{props.salary}</li>
-            <li className='about'><span className='about-p'>Уровень: </span>{props.level}</li>
-          </ul>
+        <p className='conditions-title'>О себе</p>
+        <ul className='about-list'>
+          <li className='about'><span className='about-p'>Стаж работы: </span>{props.exp}</li>
+          <li className='about'><span className='about-p'>Зарплата: </span>{props.salary}</li>
+          <li className='about'><span className='about-p'>Уровень: </span>{props.level}</li>
+        </ul>
       </div>
     </div>
   )
